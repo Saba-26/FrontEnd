@@ -1,0 +1,70 @@
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+    display:flex;
+}
+
+#fav{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+li{
+    float:left;
+}
+
+#fontColor{
+    color:black;
+    font-size: larger;
+}
+
+#head{
+     text-align:center;
+}
+
+#qurk{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:pink;
+}
+
+#contact{
+    text-align: left 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:lightblue;
+    font-size:larger;
+    font-family: Georgia serif;
+}
+
+footer{
+    text-align: center;
+    background-color: blue;
+}
+
+#green{
+    background-color: rgb(112, 223, 112);
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#red{
+    background-color: red;
+}
+
+#table{
+        margin-left: 25%; 
+        margin-right: 25%;
+        width:20%
+}
+
+#Video{
+    margin-left: 25%; 
+    margin-right: 25%;
+}
