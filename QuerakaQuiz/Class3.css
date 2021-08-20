@@ -1,0 +1,8 @@
+/* id selector= it is unique per id */
+
+#myDiv{
+    background-color: aqua;
+    padding: 15px;
+    width:50%
+}
+
