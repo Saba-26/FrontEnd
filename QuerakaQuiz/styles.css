@@ -1,70 +1,163 @@
-ul{
-    list-style-type: none;
-    margin:0;
+* {
+    box-sizing: border-box;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: rgb(93, 177, 255);
+    margin: 10px 0px 20px 0;
+}
+
+.navbar {
+    display: flex;
     justify-content: center;
-    display:flex;
 }
 
-#fav{
-    margin-left: 20%;
-    margin-right: 20%;
+.navbar li {
+    list-style: none;
+    padding: 5px;
 }
 
-li{
-    float:left;
+hr {
+    width: 80%;
+    margin: auto;
 }
 
-#fontColor{
-    color:black;
-    font-size: larger;
-}
-
-#head{
-     text-align:center;
-}
-
-#qurk{
+/* Index CSS */
+.box {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: pink;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color:pink;
+    width: 80%;
+    height: 200px;
+    padding: 30px;
+    margin: 10px auto;
 }
 
-#contact{
-    text-align: left 30%;
-    margin-left: 20%;
-    margin-right: 20%;
-    background-color:lightblue;
-    font-size:larger;
-    font-family: Georgia serif;
+.p {
+    font-size: 1.1em;
+    margin-top: 40px;
+    font-weight: lighter;
 }
 
-footer{
+footer {
+    font-size: 1.2em;
+    background-color: rgb(0, 202, 175);
+    color: white;
     text-align: center;
-    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-#green{
-    background-color: rgb(112, 223, 112);
+footer p {
+    margin: 0;
 }
 
-#yellow{
-    background-color: yellow;
+#footer{
+    position: relative;
 }
 
-#red{
-    background-color: red;
+/* Quiz CSS */
+.container {
+    width: 90%;
+    margin: 10px auto 0px auto; 
+    background-color: rgb(189, 189, 189);
 }
 
-#table{
-        margin-left: 25%; 
-        margin-right: 25%;
-        width:20%
+.row {
+    display: flex;
+    padding: 10px;
 }
 
-#Video{
-    margin-left: 25%; 
-    margin-right: 25%;
+.row li {
+    list-style: none;
+}
+
+.push {
+    margin-left: auto;
+}
+
+.white {
+    margin: 0px 15px 10px 15px;
+    padding: 10px;
+    background-color: white; 
+}
+
+#last{
+    margin-bottom: 0;
+    background-color: white; 
+}
+
+p {
+    margin-top: 5px;
+}
+
+.countries {
+    padding-left: 33px;
+}
+
+img {
+    width: 80px;
+    height: 40px;
+    padding: 10px 0px 0px 20px;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 15%;
+    text-align: center;
+}
+
+table {
+    margin-left: 25px;
+}
+
+video {
+    margin: 10px 0px 0px 20px;
+}
+
+mark {
+    padding: 5px;
+}
+
+div .green {
+    background-color: rgb(113, 255, 113);
+}
+
+div .red {
+    background-color: rgb(255, 99, 60);
+}
+
+/* Contact Us */
+.details {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(110, 209, 255);
+    width: 80%;
+    height: 250px;
+    padding: 30px;
+    margin: 10px auto;
+}
+
+.description {
+    margin: 10px;
+}
+
+dt {
+    text-decoration: underline;
+}
+
+dd {
+    margin: 0;
+    padding: 0 0 0 1.2em; 
 }
