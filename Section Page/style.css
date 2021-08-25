@@ -1,0 +1,43 @@
+.head{
+    background-color: lightgreen;
+    text-align: center;
+    height:50px;
+    border:solid black;
+    width:auto;
+}
+p{
+    margin-top: 10px;
+}
+
+.soundbar,.fb,.twitter{
+    display:inline-block;
+    width:250px;
+    border:solid black;
+    background-color: pink;
+    text-align:center;
+    height:150px;
+}
+
+.main{
+    display:inline;
+    border:solid black;
+    height:495px;
+    margin-left: 15px;
+    float:right;
+    width:1230px;
+    text-align:center;
+    background-color: lightskyblue;
+}
+
+.foot{
+    background-color: lightgreen;
+    text-align: center;
+    height:50px;
+    border:solid black;
+    width:auto;
+}
+
+
+
+
+
