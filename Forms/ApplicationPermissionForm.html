@@ -8,9 +8,94 @@
     <link rel="stylesheet" href="application.css">
 </head>
 <body>
-    <div class="border">
+    <fieldset class="border">
         <br>
-        <h1 stle="text-align:center;">Application For Permission To Date My Daughter</h1>
-    </div>
+            <h1 style="text-align:center;">Application For Permission To Date My Daughter</h1>
+            <p><b>Note:</b>Form is to be completed at least 21 days prior to date</p>
+
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label for="Name">Name:</label>
+                <input type="text" id="name" placeholder="Enter name here"><br><br>
+
+                <label for="Address">Adress:</label>
+                <input type="address" id="addr"
+                placeholder="Enter address here"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email"
+                placeholder="Enter Email"><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter Phone Number"><br><br>
+
+                <label for="iq">IQ:</label>
+                <input type="number" id="number" placeholder="Enter IQ here"><br><br>
+
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="Male">Male<br>
+                <input type="radio" name="gender" value="Female">Female<br>
+                <input type="radio" name="gender" value="other">Other<br><br>
+
+                <label for="Date">Date of Proposed Outing:</label>
+                <input type="date" name="date">
+            </fieldset>
+            <br>
+            <fieldset class="Application">
+                <p>Check all that apply</p>
+                <input type="checkbox" id="tatto" name="tatto" value="tatoo">
+                <label for="tatoo"> I have tattoos and/or piercing</label><br>
+
+                <input type="checkbox" id="age" name="age" value="age">
+                <label for="age"> I am more than 2 years older than my daughter</label><br>
+
+                <input type="checkbox" id="van" name="van" value="van">
+                <label for="van"> I own a panel van or V8 ute
+                </label><br>
+
+                <input type="checkbox" id="work" name="work" value="work">
+                <label for="work"> I work full-time</label><br>
+
+                <input type="checkbox" id="rich" name="rich" value="rich">
+                <label for="rich"> My Parents are rich</label><br>
+
+                <input type="checkbox" id="location" name="location" value="location">
+                <label for="location"> Is the date at a well lit public location</label><br>
+            </fieldset>
+            <br>
+            <fieldset class="political">
+            <label for="politic">Political Persuasion :</label>
+                <select name="politic" id="politic">
+                    <option value="Lwing">Left Wing</option>
+                    <option value="Rwing">Right Wing</option>
+                    <option value="Conservative">Conservative</option>
+                    <option value="Nazi">Nazi</option>
+                </select>
+                 &nbsp;&nbsp;
+                <label for="education">Education Level Completed :</label>
+                <select name="politic" id="politic">
+                    <option value="university">University</option>
+                    <option value="college">College</option>
+                    <option value="Conservative">High School</option>
+                    <option value="Nazi">None</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset class="essay">
+                <legend>Essay Section</legend>
+                <p>In 50 words or more explain why you want to date my daughter</p>
+                <textarea id="msg" name="message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+
+                <p>Please upload contact details for 2 references</p>
+                <textarea id="msg" name="message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>
+
+                <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:<button>Attach Files</button></p>
+            </fieldset>
+            <br>
+            <div id="submitbutton">
+                <button type="submit" id="submit">Send your application</button>   </div>
+        </fieldset>
+
+        
 </body>
 </html>

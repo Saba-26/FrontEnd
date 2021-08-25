@@ -4,7 +4,6 @@ body{
 
 .border{
     margin:80px 80px 20px;
-    height:1088px;
     background-color: white;
     border-radius:35px;
 }
@@ -12,3 +11,20 @@ p{
     margin-left:20px;
     font-size:25px;
 }
+
+button {
+    margin: .5em;
+    font-size: 1em;
+    text-transform: capitalize;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    
+  }
+
+#submitbutton {
+    display: flex; 
+    justify-content: center;
+  }
