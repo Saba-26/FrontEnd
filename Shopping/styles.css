@@ -61,3 +61,7 @@ body{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  img{
+    padding:7px;
+  }
