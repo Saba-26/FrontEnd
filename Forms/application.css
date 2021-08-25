@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(235, 192, 199)
+}
+
+.border{
+    margin:80px 80px 20px;
+    height:1088px;
+    background-color: white;
+    border-radius:35px;
+}
+p{
+    margin-left:20px;
+    font-size:25px;
+}
