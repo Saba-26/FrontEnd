@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="FCC.css">
 </head>
 <body>
-    <div class="main">
+    <fieldset class="main">
         <h1>FreeCodeCamp Survey Form</h1>
         <h3><i>Thank you for taking the time to help us improve the platform</i></h3>
-    </div> 
      <form>
-         <div class="form">
+         <fieldset class="main">
              <label id="name">Name</label><br>
              <input type="text" id="name" class="fcc" placeholder="Enter your name"><br><br>
 
              <label id="email">Email</label><br>
              <input type="email" id="email" class="fcc" placeholder="Enter your email"><br><br>
 
-             <label id="Age">Age <small>(Optional)</small></label><br>
+             <label id="Age">Age<sup>(Optional)</sup></label><br>
              <input type="number" id="age" class="fcc" placeholder="Enter your age"><br><br>
 
              <label id="role">Which option best describes your current role?</label><br>
@@ -34,14 +33,14 @@
               </select>
               <br>
               <br>
-              <label id="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+              <label id="recommend">Would you recommend freeCodeCamp to a friend??</label><br>
               <input type="radio" id="Definitely">Definitely <br>
               <input type="radio" id="Maybe">Maybe<br>
               <input type="radio" id="NotSure">Not Sure<br>
             
               <br>
-              <label id="feature" class="fcc">What is your favorite feature of freeCodeCamp??</label><br>
-              <select id="feature" name="feature">
+              <label id="feature">What is your favorite feature of freeCodeCamp??</label><br>
+              <select id="feature" name="feature" class="fcc">
                  <option value="">Select an option</option>
                  <option value="challenges">Challenges</option>
                  <option value="projects">Projects</option>
@@ -81,7 +80,7 @@
                 Submit
               </button>
            
-         </div>
+            </fieldset>
      </form>
 </body>
 </html>
