@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCC Survey Form </title>
+    <link rel="stylesheet" href="FCC.css">
 </head>
 <body>
-     <h1>FreeCodeCamp Survey Form</h1>
-     <h3><i>Thank you for taking the time to help us improve the platform</i></h3>
+    <div class="main">
+        <h1>FreeCodeCamp Survey Form</h1>
+        <h3><i>Thank you for taking the time to help us improve the platform</i></h3>
+    </div> 
      <form>
          <div class="form">
              <label id="name">Name</label><br>
-             <input type="text" id="name" placeholder="Enter your name"><br><br>
+             <input type="text" id="name" class="fcc" placeholder="Enter your name"><br><br>
 
              <label id="email">Email</label><br>
-             <input type="email" id="email" placeholder="Enter your email"><br><br>
+             <input type="email" id="email" class="fcc" placeholder="Enter your email"><br><br>
 
              <label id="Age">Age <small>(Optional)</small></label><br>
-             <input type="number" id="age" placeholder="Enter your age"><br><br>
+             <input type="number" id="age" class="fcc" placeholder="Enter your age"><br><br>
 
              <label id="role">Which option best describes your current role?</label><br>
-             <select id="role" name="role">
+             <select id="role" name="role" class="fcc">
                 <option value="">Select Current Role</option>
                 <option value="student">Student</option>
                 <option value="job">Full Time Job</option>
@@ -37,7 +40,7 @@
               <input type="radio" id="NotSure">Not Sure<br>
             
               <br>
-              <label id="feature">What is your favorite feature of freeCodeCamp??</label><br>
+              <label id="feature" class="fcc">What is your favorite feature of freeCodeCamp??</label><br>
               <select id="feature" name="feature">
                  <option value="">Select an option</option>
                  <option value="challenges">Challenges</option>
@@ -49,7 +52,7 @@
                <br>
                <br>
                <label id="improve">What would you like to see improved? <small>(Check all that apply)</small></label><br>
-               <input type="checkbox" id="FrontEnd">Front-end Projects <br>
+               <input type="checkbox" id="FrontEnd" >Front-end Projects <br>
                <input type="checkbox" id="BackEnd">Back-end Projects <br>
                <input type="checkbox" 
                id="data">Data Visualization <br>
@@ -64,14 +67,15 @@
                <input type="checkbox" id="forum">Forum<br>
                <input type="checkbox" id="courses">Additional Courses <br>
                <br>
-
-               <p>Any comments or suggestions?</p>
-               <textarea
-                 id="comments"
-                 class="input-textarea"
-                 name="comment"
-                 placeholder="Enter your comment here..."
-               ></textarea>
+ 
+               
+                <p>Any comments or suggestions?</p>
+                <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here..."
+                ></textarea>
                 <br>
                <button type="submit" id="submit" class="submit-button">
                 Submit
