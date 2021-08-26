@@ -9,5 +9,75 @@
 <body>
      <h1>FreeCodeCamp Survey Form</h1>
      <h3><i>Thank you for taking the time to help us improve the platform</i></h3>
+     <form>
+         <div class="form">
+             <label id="name">Name</label><br>
+             <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+             <label id="email">Email</label><br>
+             <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+             <label id="Age">Age <small>(Optional)</small></label><br>
+             <input type="number" id="age" placeholder="Enter your age"><br><br>
+
+             <label id="role">Which option best describes your current role?</label><br>
+             <select id="role" name="role">
+                <option value="">Select Current Role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="not_say">Prefer not to say</option>
+                <option value="other">Other</option>
+              </select>
+              <br>
+              <br>
+              <label id="recommend">Would you recommend freeCodeCamp to a friend?</label><br>
+              <input type="radio" id="Definitely">Definitely <br>
+              <input type="radio" id="Maybe">Maybe<br>
+              <input type="radio" id="NotSure">Not Sure<br>
+            
+              <br>
+              <label id="feature">What is your favorite feature of freeCodeCamp??</label><br>
+              <select id="feature" name="feature">
+                 <option value="">Select an option</option>
+                 <option value="challenges">Challenges</option>
+                 <option value="projects">Projects</option>
+                 <option value="commuinity">Commuinity</option>
+                 <option value="openSource">Open Source</option>
+               </select>
+
+               <br>
+               <br>
+               <label id="improve">What would you like to see improved? <small>(Check all that apply)</small></label><br>
+               <input type="checkbox" id="FrontEnd">Front-end Projects <br>
+               <input type="checkbox" id="BackEnd">Back-end Projects <br>
+               <input type="checkbox" 
+               id="data">Data Visualization <br>
+               <input type="checkbox" id="challenge">Challenges <br>
+               <input type="checkbox" id="open">Open Source Community<br>
+               <input type="checkbox" id="gitter">Gitter help rooms <br>
+
+               <input type="checkbox" id="video">Videos <br>
+               <input type="checkbox" 
+               id="city">City Meetups <br>
+               <input type="checkbox" id="wiki">wiki <br>
+               <input type="checkbox" id="forum">Forum<br>
+               <input type="checkbox" id="courses">Additional Courses <br>
+               <br>
+
+               <p>Any comments or suggestions?</p>
+               <textarea
+                 id="comments"
+                 class="input-textarea"
+                 name="comment"
+                 placeholder="Enter your comment here..."
+               ></textarea>
+                <br>
+               <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+           
+         </div>
+     </form>
 </body>
 </html>
