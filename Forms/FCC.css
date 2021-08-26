@@ -33,7 +33,7 @@ body {
   box-sizing: border-box;
 }
 
-  label{
+label{
     text-align: center;
     font-size: 1rem;
     display: flex;
@@ -50,6 +50,10 @@ body {
     text-align: center;
     color:whitesmoke;
   }
+
+header{
+  border-bottom: 1rem;
+}
 
   /*Form Styling*/
   form {
