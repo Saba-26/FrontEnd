@@ -77,3 +77,10 @@ a:hover{
     background-color:hsl(217, 66%, 21%);
   }
 
+  .container{
+    background-color: silver;
+    padding:5px 20px 15px 20px;
+    border:solid 2px rgb(8, 189, 250);
+    border-radius:4px;
+}
+
