@@ -1,8 +1,7 @@
-img{
+/* img{
     -webkit-clip-path: circle(49.3% at 50% 49%);
      clip-path: circle(49.3% at 50% 49%);
-}
-
+} */
 *{
     margin:0;
     padding:0;
@@ -19,8 +18,43 @@ img{
 }
 
 /*Logo and Image*/
+#logo img{
+    height:60px;
+    margin:3px 6px;
+}
 #logo{
-    height:56px;
-    margin:35px 45px;
+    margin:10px 34px;
 }
 /* List styling */
+#navbar ul{
+    display:flex;
+}
+
+#navbar::before{
+    content:" ";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#navbar ul li{
+    /* color:azure; */
+    font-size:1.3 rem;
+    list-style-type: none;
+}
+
+#navbar ul li a{
+    color:azure;
+    display: block;
+    padding:3px 22px;
+    border-radius:20px;
+    font-size:1.3 rem;
+    list-style-type: none;
+}
+
+#navbar ul li a:hover{
+
+}
