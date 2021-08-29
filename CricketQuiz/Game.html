@@ -12,12 +12,20 @@
   <header>
         <nav>
       
-            <ul >
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="level">Level</a></li>
-            </ul>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="index.html#main">Quiz</a></li>
+   
+    <li class="dropdown">
+      <a  href="javascript:void(0)" class="dropbtn">Level(Easy)</a>
+      <div style="border:2px white ;"  class="dropdown-content">
+        <a href="game.html">Easy</a>
+        <a href="gameM.html">Medium</a>
+        <a href="gameH.html">Hard</a>
+       
+      </div>
+      <li><a href="#about">About Us</a></li>
+    </li>
         </nav>
   </header>
   <br>
@@ -119,7 +127,9 @@
 
           </ol>
          
-         <button id="sub" type="submit">Submit</button>      
+         <button id="sub" type="submit">Submit</button>
+   
+        
   </fieldset>
 </body>
 </html>
