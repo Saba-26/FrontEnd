@@ -2,59 +2,107 @@
     -webkit-clip-path: circle(49.3% at 50% 49%);
      clip-path: circle(49.3% at 50% 49%);
 } */
+/* CSS RESET */
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-
+/* CSS Variables */
 :root{
-    --navbar-height:59px;
+    --navbar-height: 59px;
 }
-
-/*Navigation Bar*/
+/* Navigation Bar */
 #navbar{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
 }
-
-/*Logo and Image*/
-#logo img{
-    height:60px;
-    margin:3px 6px;
-}
+/*Navigation Bar Logo and Images */
 #logo{
-    margin:10px 34px;
+margin: 10px 34px;
 }
-/* List styling */
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+/*Navigation Bar List styling */
 #navbar ul{
-    display:flex;
-}
+    display: flex;
 
+}
 #navbar::before{
-    content:" ";
+    content: "";
     background-color: black;
-    position:absolute;
-    height:100%;
-    width:100%;
-    z-index:-1;
-    opacity:0.4;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
 }
-
 #navbar ul li{
-    /* color:azure; */
-    font-size:1.3 rem;
-    list-style-type: none;
-}
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
 
+}
 #navbar ul li a{
-    color:azure;
-    display: block;
-    padding:3px 22px;
-    border-radius:20px;
-    font-size:1.3 rem;
-    list-style-type: none;
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: 'Baloo Bhai 2', cursive;
 }
 
 #navbar ul li a:hover{
+  color: white;
+  background-color: black;
+}
 
+/* Home Section */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items:center;
+    height:400px;
+}
+
+#home:before{
+    content: "";
+    position:absolute;
+    background:url('Images/Background.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89; 
+}
+
+/* utility classes */
+.h-primary{
+    font-size:4rem;
+    padding:12px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#home h1{
+    color:azure;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:azure;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
 }
