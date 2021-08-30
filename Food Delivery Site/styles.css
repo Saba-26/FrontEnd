@@ -1,94 +1,104 @@
-/* CSS RESET */
+/* CSS Reset */
 *{
     margin: 0;
     padding: 0;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* CSS Variables */
 :root{
     --navbar-height: 59px;
 }
+
 /* Navigation Bar */
 #navbar{
     display: flex;
     align-items: center;
-    position: relative;
+    position: sticky;
     top: 0px;
 }
+
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
     top:0px;
-    left: 0px;
+    left:0px;
     height: 100%;
-    width: 100%;
+    width:100%;
     z-index: -1;
     opacity: 0.7;
 }
-/*Navigation Bar Logo and Images */
+
+/* Navigation Bar: Logo and Image */
 #logo{
-margin: 10px 34px;
+    margin: 10px 34px;
 }
+
 #logo img{
     height: 59px;
     margin: 3px 6px;
 }
-/*Navigation Bar List styling */
-#navbar{
-    position:relative;
-    display:flex;
-    align-items:center;
-    top:0px;
-}
+
+
+/* Navigation Bar: List Styling */
+
 #navbar ul{
     display: flex;
-    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Baloo Bhai', cursive;
 }
 
-#navbar ul li{
-    /* color: white; */
+#navbar ul li{ 
     list-style: none;
     font-size: 1.3rem;
-
 }
+
 #navbar ul li a{
     color: white;
-  display: block;
-  padding: 3px 22px;
-  border-radius: 20px;
-  text-decoration: none;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
 }
+
 #navbar ul li a:hover{
-    color: white;
-  background-color: black;
+    color: black;
+    background-color: white;
 }
+
 /* Home Section */
 #home{
     display: flex;
     flex-direction: column;
-    padding: 3px 200px;
-    height: 638px;
+    padding:3px 200px;
+    height: 550px;
     justify-content: center;
-   align-items: center;
+    align-items: center;
 }
-#home::before{
+
+#home::before{ 
     content: "";
     position: absolute;
     background: url('Images/Background.jpg') no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
+    height: 642px;
     top:0px;
     left:0px;
+    width: 100%;
     z-index: -1;
-    opacity: 0.89;
+    opacity:0.89;
 }
+
 #home h1{
-    color: white;
+    color:white;
     text-align: center;
     font-family: 'Bree Serif', serif;
 }
+
 #home p{
-    color: white;
+    color:white;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
@@ -99,83 +109,54 @@ margin: 10px 34px;
     display: flex;
 }
 #services .box{ 
-border: 2px solid brown;
-margin: 3px 6px;
-padding: 34px;
-border-radius: 28px;
-background: #f2f2f2;
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
 }
-#services .box img{
+
+#services .box img{ 
    height: 160px;
    margin: auto;
    display: block;
- 
 }
+
 #services .box p{
     font-family: 'Bree Serif', serif;
-}
-#services{}
-#services{}
 
-/* Client Section */
-#client-section{
-   height:344px;
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
 }
 
 #client-section::before{
-    content:" ";
-    position:absolute;
-    background:url('Images/Background2.jpg');
-    width: 100%;
-    height: 54%;
-    z-index: -1;
-    opacity: 0.4;
-    background-size: cover;
+ content: "";
+ position: absolute;
+ background: url('Images/Background2.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
 }
 
-.client-item{
-    padding:34px;
-}
-       
 #clients{
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.client-item{
+    padding: 34px;
+}
+
 #clients img{
-    height:124px;
+    height: 124px;
 }
 
-
-
-
-
-
-/* utiltiy classes */
-.h-primary{
-    font-size: 3.8rem;
-    padding: 12px;
-    font-family: 'Bree Serif', serif;
-}
-.h-secondary{
-    font-size: 2.3rem;
-    padding: 12px;
-    font-family: 'Bree Serif', serif;
-}
-.btn{
-    padding: 6px 20px;
-    border:2px solid white;
-    background-color: brown;
-    color: white;
-    margin: 17px;
-    font-size: 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.center{
-    text-align: center;
-}
 
 /* Contact Section */
 #contact{
@@ -188,7 +169,7 @@ background: #f2f2f2;
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background: url('../contact.jpg') no-repeat center center/cover;
+    background: url('Images/contact.jpg') no-repeat center center/cover;
 
 }
 #contact-box{
@@ -248,4 +229,65 @@ footer{
 
 .center{
     text-align: center;
+}
+
+/* Navigation */
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+/* Home section */
+#home{
+    height: 370px; 
+    padding: 3px 28px;
+}
+
+#home::before{
+    height: 480px; 
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+
+#services .box { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
+}
+
+/* Clients section */
+#clients{
+    flex-wrap: wrap;
+}
+
+#clients img{
+    width: 66px;
+    padding: 6px;
+    height: auto;
+}
+
+/* Contact us section */
+#contact-box form{
+    width:80%;
+}
+/* Footer */
+
+/* Utility classes */
+.h-primary{
+    font-size:26px;
+}
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
 }
