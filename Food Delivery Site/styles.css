@@ -34,6 +34,12 @@ margin: 10px 34px;
     margin: 3px 6px;
 }
 /*Navigation Bar List styling */
+#navbar{
+    position:relative;
+    display:flex;
+    align-items:center;
+    top:0px;
+}
 #navbar ul{
     display: flex;
     font-family: 'Baloo Bhai 2', cursive;
@@ -61,16 +67,18 @@ margin: 10px 34px;
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 411px;
+    height: 638px;
     justify-content: center;
    align-items: center;
 }
 #home::before{
     content: "";
     position: absolute;
-    background: url('../imges/cover.jpg') no-repeat center center/cover;
+    background: url('Images/Background.jpg') no-repeat center center/cover;
     height: 100%;
     width: 100%;
+    top:0px;
+    left:0px;
     z-index: -1;
     opacity: 0.89;
 }
@@ -103,17 +111,46 @@ background: #f2f2f2;
    display: block;
  
 }
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
 #services{}
 #services{}
-#services{}
+
+/* Client Section */
+#client-section{
+   height:344px;
+}
+
+.client-item{
+    padding:34px;
+}
+       
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height:124px;
+}
+
+
+
+
+
+
 /* utiltiy classes */
 .h-primary{
     font-size: 3.8rem;
     padding: 12px;
+    font-family: 'Bree Serif', serif;
 }
 .h-secondary{
-    font-size: 2.8rem;
+    font-size: 2.3rem;
     padding: 12px;
+    font-family: 'Bree Serif', serif;
 }
 .btn{
     padding: 6px 20px;
