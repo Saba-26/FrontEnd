@@ -27,12 +27,11 @@ margin: 10px 34px;
 /*Navigation Bar List styling */
 #navbar ul{
     display: flex;
-
 }
 #navbar::before{
     content: "";
     background-color: black;
-    position: absolute;
+    position:absolute;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -65,7 +64,7 @@ margin: 10px 34px;
     padding:3px 200px;
     justify-content: center;
     align-items:center;
-    height:400px;
+    height:633px;
 }
 
 #home:before{
@@ -79,9 +78,49 @@ margin: 10px 34px;
     opacity: 0.89; 
 }
 
+#home h1{
+    color:azure;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:azure;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services Section */
+#services{
+    margin:34px;
+    display:flex;
+
+}
+
+#services,.box{
+    border:2px solid brown;
+    padding:34px;
+    margin:3px 6px;
+    border-radius:28px;
+
+}
+
+#services,.box img{
+    height:160x;
+    margin:auto;
+    display:block;
+}
+
+
+
 /* utility classes */
 .h-primary{
     font-size:4rem;
+    padding:12px;
+}
+
+.h-secondary{
+    font-size:2.8rem;
     padding:12px;
 }
 .btn{
@@ -95,14 +134,6 @@ margin: 10px 34px;
     cursor: pointer;
 }
 
-#home h1{
-    color:azure;
-    text-align:center;
-    font-family: 'Bree Serif', serif;
-}
-
-#home p{
-    color:azure;
-    text-align:center;
-    font-family: 'Bree Serif', serif;
+.center{
+    text-align: center;
 }
