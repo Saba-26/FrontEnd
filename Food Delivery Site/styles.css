@@ -122,6 +122,16 @@ background: #f2f2f2;
    height:344px;
 }
 
+#client-section::before{
+    content:" ";
+    position:absolute;
+    background:url('Images/Background2.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
 .client-item{
     padding:34px;
 }
