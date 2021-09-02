@@ -39,7 +39,7 @@ body{
     text-align: right;
 }
 
-.navigation .link {
+.navigation .link{
     color:black;
 }
 
@@ -69,4 +69,6 @@ body{
 .head .head-heading .heading-color {
     color: var(--primary-color);
 }
+
+/*sections*/
 
