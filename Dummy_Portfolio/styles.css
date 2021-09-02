@@ -46,3 +46,27 @@ body{
 .navigation .link-active {
     font-weight: bold;
 }
+
+
+/*Header*/
+.head{
+    padding-top:2rem;
+}
+
+.head .head-img{
+    max-width:100%;
+    width:350px;
+    display:block;
+    margin:auto;
+}
+
+.head .head-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: var(--dark-gray);
+}
+
+.head .head-heading .heading-color {
+    color: var(--primary-color);
+}
+
