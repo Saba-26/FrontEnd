@@ -1,0 +1,48 @@
+:root{
+    --primary-color:#6de7b7;
+    --dark-gray: #6b7280;
+    --off-white: #F3F4F6;
+}
+
+body{
+    margin:0px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+/** lists **/
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+.navigation {
+    background-color: var(--primary-color);
+    color:black;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+.navigation .link {
+    color:black;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
