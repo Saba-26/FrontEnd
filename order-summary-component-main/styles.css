@@ -86,6 +86,13 @@ h5{
     font-weight: bolder;
 }
 
+h3,
+p {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 3em;
+}
+
 .btn{
     display:block;
     background-color:var(--Bright-blue);
